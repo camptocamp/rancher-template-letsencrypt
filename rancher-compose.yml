@@ -4,6 +4,10 @@
   description: Trusted SSL certificates at zero cost
   minimum_rancher_version: v1.5.0
   questions:
+    - variable: IMAGE
+      label: Docker image
+      required: true
+      default: vxcontrol/rancher-letsencrypt:v1.0.0
     - variable: EULA
       label: I Agree to the Let's Encrypt TOS
       description: |
